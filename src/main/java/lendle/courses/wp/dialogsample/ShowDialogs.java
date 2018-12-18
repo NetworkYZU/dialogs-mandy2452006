@@ -77,11 +77,19 @@ public class ShowDialogs extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //Launch SampleDialog1 in modal form
+        SampleDialog1 dialog1=new SampleDialog1(this);
+        dialog1.setLocationRelativeTo(this);
+        dialog1.setModal(true);//不能使用父視窗,只能使用當前的視窗
+        dialog1.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         //Launch SampleDialog1 in non-modal form
+        SampleDialog1 dialog1=new SampleDialog1(this);
+        dialog1.setLocationRelativeTo(this);
+        dialog1.setModal(false);
+        dialog1.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
